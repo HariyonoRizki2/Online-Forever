@@ -7,7 +7,7 @@ client = commands.Bot(command_prefix=':', self_bot=True, help_command=None)
 
 @client.event
 async def on_ready():
-  await client.change_presence(status=discord.Status.online)
+  await client.change_presence(status=discord.Status.dnd)
   os.system('clear')
   print(f'Logged in as {client.user} (ID: {client.user.id})')
 
